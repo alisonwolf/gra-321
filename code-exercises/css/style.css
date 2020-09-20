@@ -25,3 +25,19 @@ h2 {
   padding-top: 180px;
   padding-left: 50px;
 }
+
+.magic{
+    background-color:olive;
+}
+@media screen and (max-width:1000px)
+{
+    .magic{
+    background-color:oldlace;
+}
+}
+@media screen and (max-width:500px)
+{
+    .magic{
+    background-color:rosybrown;
+}
+}
