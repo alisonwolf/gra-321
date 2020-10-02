@@ -1,4 +1,4 @@
-  * {
+body {
 background-color: floralwhite;
 }
 
@@ -26,18 +26,18 @@ h2 {
   padding-left: 50px;
 }
 
-.magic{
+body.magic{
     background-color:olive;
 }
 @media screen and (max-width:1000px)
 {
-    .magic{
+body.magic{
     background-color:oldlace;
 }
 }
 @media screen and (max-width:500px)
 {
-    .magic{
+body.magic{
     background-color:rosybrown;
 }
 }
