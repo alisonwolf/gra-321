@@ -1,7 +1,171 @@
-* {
+/*--sets a standard font size for the page so you can use rem units--*/
+html {
+  font-size: 16px;
+}
+/*---*/
+
+/*--since body contains all of the content on the page (it's the parent container to all content) we want to start by priming the whole page to be 100% of the screen width. That way, when we add widths to content housed within the body (children of the body parent container), the children content will never break past 100% of the screen size --*/
+body {
+margin: 0 auto;
+padding: 0;
+width: 100%;
+background-color: #474C50;
+}
+
+.locations-section {
+width: 94%;
+margin: 0 auto;
+  background-color: salmon;
 
 }
 
-h1 {
+.location-info {
+margin: 20px 0px;
+  background-color: #ECE0D1;
+  padding: 3%;
+}
 
+.locations-section button {
+background-color: #274028;
+border: none;
+color: #ECE0D1;
+padding: 15px 32px;
+text-align: center;
+font-size: 20px;
+}
+
+.people-eating {
+  width: 100%;
+}
+
+.food-menu-info {
+margin: 20px 0px;
+  background-color: #ECE0D1;
+  padding: 3%;
+}
+
+/*Food Menu Section Mobile/Default Styling Start*/
+.food-menu-section {
+  background-color: lavender;
+}
+
+.menu-row-1 {
+  background-color: pink;
+  width:100%;
+}
+
+.hot-coffee {
+background-image: url("./img/hot-coffee.png");
+  height: 500px;
+    width:100%; /*we'll change this to only take up half the screen on desktop*/
+    background-size: cover;
+    background-position: center;
+}
+
+
+.about-info {
+margin: 20px 0px;
+  background-color: #ECE0D1;
+  padding: 3%;
+}
+
+.stay-in-touch-info {
+margin: 20px 0px;
+  background-color: #ECE0D1;
+  padding: 3%;
+}
+
+header {
+background-color: #ECE0D1;
+width: 100%;
+}
+
+.header-nav {
+  background-color: #ECE0D1;
+  width:90%;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display:flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+
+#logo {
+height:100px;
+}
+
+#toggle {
+display:none;
+}
+
+label {
+font-size: 50px;
+line-height:100px;
+cursor: pointer;
+}
+
+ul.menu-items {
+padding: 20px 0 40px 0;
+margin: 0;
+list-style-type: none;
+text-align: left;
+border-top:3px double #000;
+
+}
+
+ul.menu-items a {
+  text-decoration:none;
+  line-height:40px;
+  text-align: left;
+  color: black;
+  display:block;
+}
+
+#toggle:checked ~ ul.menu-items {
+  display:none;
+}
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 500px) {
+  .header-nav {
+  background-color: #ECE0D1;
+  width:90%;
+  margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+  display:inline-block;
+  position: relative;
+  padding: 30px 0 30px 0;
+  width:60%;
+}
+
+
+#toggle {
+display:none;
+}
+
+label {
+display:none;
+}
+
+ul.menu-items, #toggle:checked ~ ul.menu-items {
+display: flex;
+margin: 0;
+list-style-type: none;
+text-align: right;
+border-top:none;
+  width: 60%;
+  justify-content: space-between;
+}
 }

@@ -1,14 +1,208 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>#</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="#">
-    <meta name="keywords" content="#">
-    <meta name="author" content="#">
-  </head>
 
-  <body>
-  <h1>Placeholder Text</h1>
-  </body>
+<head>
+  <title>Charlie's Cafe</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="ali wolf">
+  <link rel=“icon” type=“image/png” href=“img/“ />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="css/normalize.css" type="text/css" rel="stylesheet">
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<!--Syntax for Comments-->
+
+<!--Overall body of document start. Anything in here (besides comments) will appear on your web page-->
+
+<body>
+
+  <!--Header Section Start -->
+  <header>
+
+    <!--this header-nav houses the entire header navigation across mobile and desktop-->
+    <div class="header-nav">
+
+      <!--This nav-bar houses the logo and nav items -->
+      <div class="nav-bar">
+
+        <!--This img tag houses the logo -->
+        <img id="logo" src="img/charlies-logo.png" alt="charlies logo">
+        <!-- img tag end -->
+
+        <!--this &#9776; is unicode for the hamburger menu glyph -->
+        <label for="toggle">&#9776;</label>
+        <!--glyph end-->
+
+      </div>
+      <!--nav-bar end -->
+
+      <!--allows hamburger nav to open/close on mobile -->
+      <input type="checkbox" id="toggle">
+      <!--input end-->
+
+      <!-- houses all your navigation items-->
+      <ul class="menu-items">
+        <li><a href="#locations">locations</a></li>
+        <li><a href="#menu">menu</a> </li>
+        <li> <a href="#about">about</a></li>
+        <li> <a href="#stay in touch!">stay in touch!</a></li>
+      </ul>
+      <!--menu-items end-->
+
+    </div>
+    <!--header-nav end-->
+
+  </header>
+  <!--Header Section End -->
+
+
+
+
+
+
+  <!-- Main page content begin. Using this Main tag helps us organize our html better and gives us an opportunity to declare widths/other styles to the whole main page content at once, if we want to-->
+  <main>
+
+    <!--section begin. Sections help break down and organize the content even further. We can get even more specific with our targeting by using sections. Also great for accesibility -->
+    <section>
+
+    </section>
+    <!--section end-->
+
+
+    <!--locations section begin -->
+    <section class="locations-section">
+
+      <div class="location-info">
+        <h1>design north</h1>
+        <p>810 e forest mall, in design and the arts library</p>
+        <p>monday - friday: 7am - 3pm</p>
+        <p>saturday - sunday: closed</p>
+        <a href="https://www.google.com/maps/place/Charlie's+Cafe/@33.4213555,-111.9390361,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dbd45c25f3:0xdd1e6f3b3aa33376!8m2!3d33.4213555!4d-111.9368474"><button>google maps directions</button></a>
+      </div>
+
+       <div class="location-info">
+        <h1>biodesign b</h1>
+        <p>727 e tyler st, in biodesign institute, building b</p>
+        <p>monday - friday: 7am - 4pm</p>
+        <p>saturday - sunday: closed</p>
+        <a href="https://www.google.com/maps/place/Charlie's+Cafe/@33.4219505,-111.942993,15z/data=!4m8!1m2!2m1!1sbiodesign+charlie's!3m4!1s0x872b08e78144c81b:0xf4852d18349ece11!8m2!3d33.4195372!4d-111.9285518"><button>google maps directions</button></a>
+      </div>
+
+       <div class="location-info">
+        <h1>hayden library</h1>
+        <p>300 orange mall, in library entrance, left side</p>
+        <p>monday - friday: 7am - 3pm</p>
+        <p>saturday - sunday: closed</p>
+        <a href="https://www.google.com/maps/place/Hayden+Library,+300+E+Orange+St.,+Tempe,+AZ+85287/@33.4190755,-111.9368029,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08db7f65014d:0x59af83fc2da02dfb!8m2!3d33.4190755!4d-111.9346142"><button>google maps directions</button></a>
+      </div>
+    <!--locations section end-->
+
+    <!-- this img tag houses photo of people eating -->
+    <img id="people-eating" src="img/people-eating.png" alt="photo of people eating">
+    <!-- img tag end -->
+
+
+
+
+    <!--menu section begin -->
+  <section class="food-menu-section">
+
+    <!--menu section begin -->
+  <section class="food-menu-section">
+
+    <!--row 1 start -->
+    <div class="menu-row-1">
+
+    <!-- this img tag houses photo of hot coffee -->
+    <div class="hot-coffee">
+      <!--placeholder space for image in css-->
+    </div>
+    <!-- img tag end -->
+
+      <div class="food-menu-info">
+        <h2>hot drinks</h2>
+        <p>hot drink 1</p>
+        <p>hot drink 2</p>
+        <p>hot drink 3</p>
+      </div>
+
+    </div>
+    <!--menu-row-1 end-->
+
+
+
+        <!-- this img tag houses photo of top of cold coffee -->
+        <img id="top-cold-coffee" src="img/top-cold-coffee.png" alt="photo cold coffee in glass" width=380px>
+        <!-- img tag end -->
+
+      <div class="food-menu-info">
+        <h2>cold drinks</h2>
+        <p>cold drink 1</p>
+        <p>cold drink 2</p>
+        <p>cold drink 3</p>
+      </div>
+
+      <!-- this img tag houses photo of lower half of cold coffee -->
+      <img id="lower-cold-coffee" src="img/lower-cold-coffee.png" alt="photo cold coffee in glass" width=380px>
+      <!-- img tag end -->
+
+      <div class="food-menu-info">
+        <h2>drink specials</h2>
+        <p>special drink 1</p>
+        <p>special drink 2</p>
+        <p>special drink 3</p>
+      </div>
+
+      <!-- this img tag houses photo of a sandwich -->
+      <img id="sandwich" src="img/sandwich.png" alt="photo sandwiches with veggies" width=380px>
+      <!-- img tag end -->
+
+      <div class="food-menu-info">
+        <h2>sandwiches</h2>
+        <p>italiano - grilled baguette with prosciutto, mozzarella, sliced tomato, basil pesto and a touch of balsamic vinegar </p>
+        <p>seville - grilled baguette with spanish chorizo, mozzarella, sliced tomato, roasted red pepper, sun dried tomato pesto and a touch of balsamic vinegar </p>
+        <p>milano - grilled baguette with prosciutto, salami, ham, mozzarella, sliced tomato, pepperoni, basil pesto and a touch of balsamic vinegar </p>
+        <p>caprese - grilled baguette with mozzarella, sliced tomato, fresh basil (when available), basil pesto and a touch of balsamic vinegar </p>
+        <p>vegetarian - grilled herb focaccia with mozzarella, feta cheese, roasted red peppers, marinated artichoke, tomato, red onion and basil pesto </p>
+        <p>mediterranean chicken - grilled focaccia with spiced chicken breast, mozzarella, roasted red peppers, sliced tomato and sun dried pesto </p>
+
+      </div>
+      <!--menu section ends -->
+
+      <!-- this img tag houses photo of a sandwich -->
+      <img id="coffee-cup" src="img/coffee-cup.png" alt="photo coffee cup" width=380px>
+      <!-- img tag end -->
+
+      <!--about section begins -->
+      <section class="about-section">
+        <div class="about-info">
+          <h2>about us</h2>
+          <p>charlie’s café, one of sun devil dining’s local restaurant partners, brings the taste of europe to asu! proudly serving lavazza italian espresso and featuring fresh european sandwiches and baked goods. come experience the difference! with three location of campus, there is always a charlie’s café nearby! charlie’s café is located at the hayden library, bio design b building and the college
+of design. </p>
+        </div>
+      <!--about section ends-->
+
+
+      <!--stay in touch section begins -->
+      <section class="stay in touch section">
+        <div class="stay-in-touch-info">
+          <p>480 616 1899</p>
+          <p>charliescafe@gmail.com</p>
+          <p>@charliescafeasu</p>
+        </div>
+      <!--stay in touch section ends-->
+
+
+
+
+  </main>
+  <!--main page content end-->
+
+</body>
+<!--Overall body of document end-->
+
 </html>
