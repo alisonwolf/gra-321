@@ -1,8 +1,14 @@
 /*--sets a standard font size for the page so you can use rem units--*/
 html {
   font-size: 16px;
+
 }
 /*---*/
+
+body {
+  font-family: 'Avenir', sans-serif;
+}
+
 
 /*--since body contains all of the content on the page (it's the parent container to all content) we want to start by priming the whole page to be 100% of the screen width. That way, when we add widths to content housed within the body (children of the body parent container), the children content will never break past 100% of the screen size --*/
 body {
@@ -31,7 +37,8 @@ border: none;
 color: #ECE0D1;
 padding: 15px 32px;
 text-align: center;
-font-size: 20px;
+font-size: 16px;
+font-family: 'Avenir', sans-serif;
 }
 
 .people-eating {
@@ -54,14 +61,29 @@ margin: 20px 0px;
   width:100%;
 }
 
-.hot-coffee {
-background-image: url("./img/hot-coffee.png");
-  height: 500px;
-    width:100%; /*we'll change this to only take up half the screen on desktop*/
-    background-size: cover;
-    background-position: center;
+.menu-item-row {
+ width: 100%;
+ display:flex;
+ justify-content: space-between;
+ align-items:flex-start;
+ padding: 0 0 1rem 0;
 }
 
+.menu-item-row p {
+  width:30%;
+}
+
+.menu-item-row ul {
+  width:60%;
+  list-style-type: none;
+  float: right;
+  text-align:right;
+}
+
+.menu-item-row ul li {
+  width:30%;
+  display:inline-block;
+}
 
 .about-info {
 margin: 20px 0px;
