@@ -45,6 +45,98 @@ font-family: 'Avenir', sans-serif;
   width: 100%;
 }
 
+
+
+/*Food Menu Section Mobile/Default Styling Start*/
+.food-menu-section {
+  background-color: lavender;
+  width: 94%;
+}
+
+.menu-row-1 {
+  background-color: pink;
+  width:100%;
+}
+
+.hot-coffee-uncropped {
+background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
+  height: 200px;
+    width:100%; /*we'll change this to only take up half the screen on desktop*/
+    background-size: cover;
+    background-position: bottom;
+}
+
+.food-menu-info {
+background-color: paleturquoise;
+   width:100%; /*we'll change this to only take up half the screen on desktop*/
+}
+/*Food Menu Section Mobile/Default Styling End*/
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 500px) {
+  .header-nav {
+  background-color: #EBF9FF;
+  width:90%;
+  margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+  display:inline-block;
+  position: relative;
+  padding: 30px 0 30px 0;
+  width:60%;
+}
+
+
+#toggle {
+display:none;
+}
+
+label {
+display:none;
+}
+
+ul.menu-items, #toggle:checked ~ ul.menu-items {
+display: flex;
+margin: 0;
+list-style-type: none;
+text-align: right;
+border-top:none;
+  width: 60%;
+  justify-content: space-between;
+}
+
+
+ /*Food Menu Section Desktop Styling Start*/
+  .menu-row-1 {
+  width: 94%;
+  display:flex;
+justify-content: space-between;
+    margin: 2% auto;
+
+  }
+
+  .hot-coffee-uncropped {
+background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
+  height: 500px;
+    width:49%; /*updated to only take up half of the screen on desktop*/
+    background-size: cover;
+    background-position: center;
+}
+  .food-menu-info {
+  width: 49%; /*updated to only take up half of the screen on desktop*/
+  }
+   /*Food Menu Section Desktop Styling Start*/
+
+}
+
+
+
+
 .food-menu-info {
 margin: 20px 0px;
   background-color: #ECE0D1;
@@ -54,6 +146,7 @@ margin: 20px 0px;
 /*Food Menu Section Mobile/Default Styling Start*/
 .food-menu-section {
   background-color: lavender;
+  width: 94%;
 }
 
 .menu-row-1 {
@@ -164,6 +257,8 @@ ul.menu-items a {
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .nav-bar {
   display:inline-block;
