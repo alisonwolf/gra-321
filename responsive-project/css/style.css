@@ -39,7 +39,7 @@ background-color: #474C50;
     overflow: hidden;
     width: 94%;
     margin: 0 auto;
-  height:500px;
+    height:500px;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -188,7 +188,7 @@ width:94%;
 .locations-section {
 width: 94%;
 margin: 0 auto;
-  background-color: salmon;
+
 }
 
 
@@ -196,7 +196,7 @@ margin: 0 auto;
 
 
 
-
+/*responsive locations section start*/
 .locations-section {
   display: flex;
 }
@@ -211,7 +211,7 @@ margin: 0 auto;
     flex-direction: column;
   }
 }
-
+/*responsive locations section end*/
 
 
 
@@ -502,3 +502,22 @@ text-align: center;
 font-size: 16px;
 font-family: 'Avenir', sans-serif;
 }
+
+
+
+/*responsive stay in touch section start*/
+.stay-in-touch-section {
+  display: flex;
+}
+
+.stay-in-touch-info {
+  flex: 1; /*grow*/
+  border: none;
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+  .stay-in-touch-section {
+    flex-direction: column;
+  }
+}
+/*responsive stay in touch section end*/
