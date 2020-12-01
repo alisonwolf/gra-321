@@ -18,12 +18,44 @@ width: 100%;
 background-color: #474C50;
 }
 
+h3 {
+margin: 0 auto;
+background-color: #BDC691;
+padding: 15px 0px;
+text-align: center;
+width:94%;
+}
+
 .locations-section {
 width: 94%;
 margin: 0 auto;
   background-color: salmon;
-
 }
+
+
+
+
+
+
+
+.locations-section {
+  display: flex;
+}
+
+.location-info {
+  flex: 1; /*grow*/
+  border: none;
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+  .locations-section {
+    flex-direction: column;
+  }
+}
+
+
+
+
 
 .location-info {
 margin: 20px 0px;
@@ -60,7 +92,7 @@ font-family: 'Avenir', sans-serif;
 }
 
 .hot-coffee-uncropped {
-background-image: url("../hot-coffee-uncropped.png");
+background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
   height: 200px;
     width:100%; /*we'll change this to only take up half the screen on desktop*/
     background-size: cover;
@@ -122,7 +154,7 @@ justify-content: space-between;
   }
 
   .hot-coffee-uncropped {
-background-image: url("../hot-coffee-uncropped.png");
+background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
   height: 500px;
     width:100%; /*updated to only take up half of the screen on desktop*/
     background-size: cover;
@@ -292,19 +324,4 @@ border-top:none;
 .about-section {
 width: 94%;
 margin: 0 auto;
-}
-
-.stay-in-touch-section {
-width: 94%;
-margin: 0 auto;
-}
-
-.stay-in-touch-section button {
-background-color: #274028;
-border: none;
-color: #ECE0D1;
-padding: 15px 32px;
-text-align: center;
-font-size: 16px;
-font-family: 'Avenir', sans-serif;
 }
