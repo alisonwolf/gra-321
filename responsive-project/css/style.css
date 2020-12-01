@@ -37,7 +37,8 @@ background-color: #474C50;
 .carousel-inner {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 94%;
+    margin: 0 auto;
   height:500px;
 }
 
@@ -49,21 +50,21 @@ background-color: #474C50;
 /* FOR CLASSES .IMAGE-1, .IMAGE-2, AND .IMAGE-3, REPLACE THE BACKGROUND IMAGE URL WITH YOUR IMAGE URL. THIS SLIDER MUST HAVE 3 IMAGES TO FUNCTION PROPERLY */
 
 .image-1 {
-background-image: url(https://lindseymariegomez.github.io/fall-2020/img/fall-4.jpg);
+background-image: url("../img/carusel-img1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
  background-position: center center;
 }
 
 .image-2 {
-background-image: url(https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg);
+background-image: url("../img/carusel-img2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
  background-position: center center;
 }
 
 .image-3 {
-background-image: url(https://lindseymariegomez.github.io/fall-2020/img/fall-5.jpg);
+background-image: url("../img/carusel-img3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
  background-position: center center;
@@ -134,7 +135,7 @@ bottom:2%;
 }
 
 .carousel-bullet {
-    color: #fff;
+    color: #474C50;
     cursor: pointer;
     display: block;
     font-size: 35px;
@@ -147,7 +148,7 @@ bottom:2%;
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #428bca;
+    color: #BDC691;
 }
 
 #title {
@@ -252,11 +253,11 @@ font-family: 'Avenir', sans-serif;
 }
 
 .hot-coffee-uncropped {
-background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
+background-image: url("../img/cold-coffee-uncropped.png");
   height: 200px;
     width:100%; /*we'll change this to only take up half the screen on desktop*/
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .food-menu-info {
@@ -314,11 +315,11 @@ justify-content: space-between;
   }
 
   .hot-coffee-uncropped {
-background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
+background-image: url("../img/cold-coffee-uncropped.png");
   height: 500px;
     width:100%; /*updated to only take up half of the screen on desktop*/
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
   .food-menu-info {
   width: 49%; /*updated to only take up half of the screen on desktop*/
@@ -490,4 +491,14 @@ border-top:none;
 .about-section {
 width: 94%;
 margin: 0 auto;
+}
+
+.about-section button {
+background-color: #274028;
+border: none;
+color: #ECE0D1;
+padding: 15px 32px;
+text-align: center;
+font-size: 16px;
+font-family: 'Avenir', sans-serif;
 }
