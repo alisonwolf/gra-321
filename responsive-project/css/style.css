@@ -59,11 +59,11 @@ font-family: 'Avenir', sans-serif;
 }
 
 .hot-coffee-uncropped {
-background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
+background-image: url("https://github.com/alisonwolf/gra-321/blob/master/cold-coffee-uncropped.png");
   height: 200px;
     width:100%; /*we'll change this to only take up half the screen on desktop*/
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 
 .food-menu-info {
@@ -121,9 +121,9 @@ justify-content: space-between;
   }
 
   .hot-coffee-uncropped {
-background-image: url("https://lindseymariegomez.github.io/fall-2020/img/fall-3.jpg");
+background-image: url("https://github.com/alisonwolf/gra-321/blob/master/cold-coffee-uncropped.png");
   height: 500px;
-    width:49%; /*updated to only take up half of the screen on desktop*/
+    width:100%; /*updated to only take up half of the screen on desktop*/
     background-size: cover;
     background-position: center;
 }
@@ -192,7 +192,8 @@ margin: 20px 0px;
 
 header {
 background-color: #ECE0D1;
-width: 100%;
+width: 94%;
+ margin: 0 auto;
 }
 
 .header-nav {
