@@ -317,7 +317,7 @@ justify-content: space-between;
   .hot-coffee-uncropped {
 background-image: url("../img/cold-coffee-uncropped.png");
   height: 1420px;
-    width:100%; /*updated to only take up half of the screen on desktop*/
+    width:80%; /*updated to only take up half of the screen on desktop*/
     background-size: cover;
     background-position: top;
 }
@@ -327,6 +327,98 @@ background-image: url("../img/cold-coffee-uncropped.png");
    /*Food Menu Section Desktop Styling Start*/
 
 }
+
+
+
+
+/*row 2 cold drinks and drink specials start*/
+.menu-row-2 {
+  background-color: pink;
+  width:100%;
+}
+
+.hot-coffee-uncropped {
+background-image: url("../img/cold-coffee-uncropped.png");
+  height: 200px;
+    width:100%; /*we'll change this to only take up half the screen on desktop*/
+    background-size: cover;
+    background-position: top;
+}
+
+.food-menu-info {
+background-color: paleturquoise;
+   width:100%; /*we'll change this to only take up half the screen on desktop*/
+}
+/*Food Menu Section Mobile/Default Styling End*/
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 500px) {
+  .header-nav {
+  background-color: #EBF9FF;
+  width:90%;
+  margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+  display:inline-block;
+  position: relative;
+  padding: 30px 0 30px 0;
+  width:60%;
+}
+
+
+#toggle {
+display:none;
+}
+
+label {
+display:none;
+}
+
+ul.menu-items, #toggle:checked ~ ul.menu-items {
+display: flex;
+margin: 0;
+list-style-type: none;
+text-align: right;
+border-top:none;
+  width: 60%;
+  justify-content: space-between;
+}
+
+
+ /*Food Menu Section Desktop Styling Start*/
+  .menu-row-1 {
+  width: 94%;
+  display:flex;
+justify-content: space-between;
+    margin: 2% auto;
+
+  }
+
+  .hot-coffee-uncropped {
+background-image: url("../img/cold-coffee-uncropped.png");
+  height: 1420px;
+    width:80%; /*updated to only take up half of the screen on desktop*/
+    background-size: cover;
+    background-position: top;
+}
+  .food-menu-info {
+  width: 49%; /*updated to only take up half of the screen on desktop*/
+  }
+   /*Food Menu Section Desktop Styling Start*/
+
+}
+/*row 2 cold drinks and drink specials end*/
+
+
+
+
+
+
 
 
 
@@ -512,6 +604,7 @@ font-family: 'Avenir', sans-serif;
 /*responsive stay in touch section start*/
 .stay-in-touch-section {
   display: flex;
+  background-color: #ECE0D1;
 }
 
 .stay-in-touch-info {
