@@ -316,7 +316,7 @@ justify-content: space-between;
 
   .hot-coffee-uncropped {
 background-image: url("../img/cold-coffee-uncropped.png");
-  height: 1000px;
+  height: 1420px;
     width:100%; /*updated to only take up half of the screen on desktop*/
     background-size: cover;
     background-position: top;
@@ -344,7 +344,7 @@ margin: 20px 0px;
 }
 
 .menu-row-1 {
-  background-color: pink;
+  background-color: #ECE0D1;
   width:100%;
 }
 
